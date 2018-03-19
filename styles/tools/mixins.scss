@@ -1,0 +1,68 @@
+@mixin checkbox {
+
+}
+//wont output brdr by default
+@include skewed($w,$brdr:null) {
+	color:green;
+	width:$w;
+	border:$brdr;
+}
+
+placeholder selectors
+%btn {
+	color:blue;
+}
+
+@extend %btn;
+makes css more compact
+
+// comments that arent output to the css file
+
+@mixin flex(
+	$disp: flex,
+	$dir: null,
+	$wrap: null,
+	$just: null,
+	$ali: null) {
+	display: $disp;
+	flex-direction:$dir;
+	flex-wrap:$wrap;
+	justify-content:$just;
+	align-items:$ali;
+}
+
+
+.card {
+	@include flex($wrap:wrap)
+}
+
+
+
+@mixin mq($break) {
+	@if $value == null {
+		@error "#{$break} is not a valid breakpoint name";
+		@warn "#{$break} is not a valid breakpoint name";
+	}
+	$value: map-get($breakpoints, $break);
+
+	@media (max-width: $value) {
+		@content;
+	}
+
+}
+
+.navbar {
+	@include mq(xs) {
+		display:none;
+	}
+}
+
+@mixin bg-colors($map) {
+	@each $theme, $color in $map {
+		&-#{$theme} {
+			background:$color;
+		}
+	}
+
+}
+

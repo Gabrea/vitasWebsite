@@ -1,0 +1,76 @@
+ // djadw
+ @mixin flex(
+	$disp: flex,
+	$just: null,
+	$ali: null,
+	$dir: row,
+	$wrap: nowrap) {
+	display: $disp;
+	justify-content:$just;
+	align-items:$ali;
+	flex-direction:$dir;
+	flex-wrap:$wrap;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	@include flex(flex,center,center,column);
+	
+	width: 100%;
+	height: 100%;
+	
+	background: #0e0e0e;
+
+	animation: fadeinbac 20s;
+	animation-delay: 7s;
+	animation-fill-mode: forwards;
+}
+
+
+
+.container{
+	position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    @include flex(flex,flex-start,flex-start,row,wrap);
+}
+
+.fullwidth {
+    width: 100%;
+}
+.fullwindow {
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    position: relative;
+    background:white;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    @include flex(flex,flex-start,center,column);
+}
+.strip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include flex(flex,center,center);
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    font-family: 'object-fit: cover;';
+}
+
+.center-box {
+    width: 40%;
+    height: 40%;
+}

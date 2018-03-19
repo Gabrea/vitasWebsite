@@ -1,0 +1,73 @@
+@function divide($a, $b:max-width) {
+	@return($a/$b);
+}
+
+//functions don't return css onnly values
+.test {
+width:divide(4px);
+}
+
+@function px-to-px($target, $content) {
+	@return($target / $context) * 100%;
+}
+@function per-line($item) {
+	$g-pct: px-to-pc($gutter) *2;
+	$g-total: $items * $g-pct;
+	@return(100 / $items) - $g-total;
+}
+
+
+//can use to but wont use all values
+@for $i from 1 through 10 {
+	.box-#{$i} {
+		background-color:;
+	}
+}
+
+
+
+$teachers:('andrew','bob','fred');
+
+@each $teacher in $teachers {
+	.teacher-#{$teacher} {
+		background-image: url('img/#{$teacher}.jpg')
+	}
+}
+
+$categories: (
+	'admin' : green,
+	'customer' : blue,
+	'installer' : navy,
+);
+
+@each $category, $color in $categories {
+	.#{$category} {
+		background: $color;
+	}
+}
+
+//selects parent selector of the rule and will add this to each
+@mixin themes($map){
+	@each $category, $color in $map {
+		&#{$category} {
+			background: $color;
+		}
+	}
+}
+
+.icon {
+	@include themes($themes);
+}
+
+@function em($target, $context: $font-size-base) {
+	@return ($target / $context) * 1em;
+}
+
+//call colour pallete modifiers
+@function palette($palette, $shade: 'base') {
+	@return map-get(map-get($palettes, $palette), $shade)
+}
+
+.admin {
+	color: palette(admin, base);
+}

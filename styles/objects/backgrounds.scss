@@ -1,0 +1,56 @@
+.pro1 {
+  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/magician.jpg");
+}
+.pro2 {
+  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/obsidion.jpg");
+}
+.pro3 {
+  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/headbeast.jpg");
+}
+.pro4 {
+  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/footpatrol.jpg");
+}
+.pro5 {
+  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/musicvideo.jpg");
+}
+.pro6 {
+  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/macro.jpg");
+}
+.pro7 {
+  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/fuguestate.jpg");
+}
+.pro1:hover {
+  animation-name: hovermagician;
+  animation-duration: .01s;
+  animation-fill-mode: forwards;
+}
+.pro2:hover {
+  animation-name: hoverobsidion;
+  animation-duration: .01s;
+  animation-fill-mode: forwards;
+}
+.pro3:hover {
+  animation-name: hoverheadbeast;
+  animation-duration: .01s;
+  animation-fill-mode: forwards;
+}
+.pro4:hover {
+  animation-name: hoverfootpatrol;
+  animation-duration: .01s;
+  animation-fill-mode: forwards;
+}
+.pro5:hover {
+  animation-name: hovermusicvideo;
+  animation-duration: .01s;
+  animation-fill-mode: forwards;
+}
+.pro6:hover {
+  animation-name: hovermacro;
+  animation-duration: .01s;
+  animation-fill-mode: forwards;
+}
+.pro7:hover {
+  animation-name: hoverfuguestate;
+  animation-duration: .01s;
+  animation-fill-mode: forwards;
+}

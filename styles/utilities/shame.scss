@@ -1,0 +1,555 @@
+
+a:hover {
+  opacity: 1;
+}
+
+
+
+.showreel__vid {
+  width:90%;
+  height:90%;
+  margin:5%;
+}
+
+/* Home page intro */
+.anim {
+  width: 40%;
+  height: 40%;
+}
+.anim__intro {
+  content: "";
+  width: 80%;
+  height: auto;
+  text-align: center;
+  animation: textslide 1s, textslideback 1s;
+  animation-delay: 2s, 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(.51, .52, .51, .52);
+  clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+}
+.anim__intro2 {
+  content: "";
+  width: inherit;
+  z-index: 3;
+  opacity: 0.5;
+  position: absolute;
+  height: auto;
+  text-align: center;
+  animation: textslidecine 1s, textslidecineback 1s;
+  animation-delay: 4s, 6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(.51, .52, .51, .52);
+  clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+}
+.anim__intro3 {
+  content: "";
+  width: inherit;
+  z-index: 4;
+  opacity: 0.5;
+  position: absolute;
+  height: auto;
+  text-align: center;
+  animation: textslide 1s, fadeout 2s;
+  animation-delay: 6s, 8s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(.51, .52, .51, .52);
+  clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+}
+.anim__intro4 {
+  content: "";
+  width: inherit;
+  z-index: 5;
+  opacity: 0;
+  line-height: 2.5em;
+  position: absolute;
+  height: auto;
+  text-align: center;
+  animation: fadein 3s;
+  animation-delay: 10s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(.51, .52, .51, .52);
+}
+.anim__bar {
+  width: 2em;
+  height: 2em;
+  border-right: 2px solid white;
+  transform: rotate(20deg);
+  transform-origin: 110% 50%;
+  position: absolute;
+  z-index: 2;
+  right: 60%;
+  animation: flicker 10s, barslide 1.1s, slideback 1s, slideforward 1s, fadeout 2s;
+  animation-delay: 0s, 2s, 4s, 6s, 8s;
+  animation-iteration-count: 2, 1, 1, 1, 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear, cubic-bezier(.51, .52, .51, .52);
+}
+/* Home page intro */
+
+/* Play Reel hover effect */
+h2>a {
+  position: relative;
+  text-decoration: none;
+}
+h2>a:hover {
+  color: #fff;
+}
+h2>a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.5px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+h2>a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+/* Play Reel hover effect */
+.aboutbox {
+  width: 60%;
+  height: 100%;
+  z-index: 3;
+  margin: 10% 0 0 0;
+}
+.aboutbox__text {
+  width: 60%;
+  height: auto;
+  font-size: 1em;
+  padding: 5%;
+  background: rgba(14, 14, 14, 0.8);
+}
+
+/* utility */
+.absolute {
+  position: absolute;
+}
+.scroll {
+  overflow:scroll;
+}
+.main {
+  width: 100%;
+  height: 100%;
+}
+/* theme */
+
+/* scope */
+
+.projects {
+  width: 90%;
+  height: 600vh;
+  overflow: scroll;
+  z-index: 10;
+  background-color: #0e0e0e;
+}
+.projects__title {
+  font-size: 3em;
+  width: 50%;
+  left: 10%;
+  white-space: nowrap;
+  top: 9%;
+  position: absolute;
+}
+.projects__vid{
+  position: absolute;
+  z-index: 9;
+  top: 20%;
+  pointer-events: none;
+  width: 100%;
+  max-height: 100%;
+}
+.projects__slider{
+  position: absolute;
+  z-index: 9;
+  top: 20%;
+  width: 100%;
+  max-height: 100%;
+  overflow:hidden;
+}
+.projects__text {
+  width: 40%;
+  margin-left: 5%;
+  margin-top: 35%;
+  height: auto;
+  padding: 2%;
+  z-index: 11;
+  font-size: .8em;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.projects__film {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: width 2s;
+}
+.project__vidpage {
+  width:90%;
+  height:90%;
+  background-color:black;
+  margin: auto;
+} 
+.project__vidpage__title {
+  z-index:10; 
+  margin-top:7%;
+  font-size:2em;
+  align-self: flex-start;
+}
+.projects__text--hide {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    margin-left: 90%;
+    transition:all 0.5s ease;
+}
+.projects__text--hide::before {
+  content:"";
+  height:2px;
+  width:20px;
+  background-color: white;
+   position: absolute;
+   cursor:pointer;
+   transition:all 0.5s ease;
+} 
+.projects__text--hide:hover:before {
+  content:"hide"; 
+  background-color:transparent;
+  transition:all 0.5s ease;
+} 
+
+/*
+#s1text:checked ~ .s1 .projects__text {
+  display:none;
+}
+*/
+/*close vid animation */
+
+
+
+/*closeanimationed */
+
+
+
+.black {
+  background-color:black;
+
+}
+
+/* is- has- */
+
+/* COntact form */
+
+
+
+/* CONTACT FORM */
+
+
+/* TRUMPS */
+#p1 {
+  display: flex;
+}
+/*
+#p2, #p3, #p4, #p5 {
+  display: none;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+*/
+#p1 {
+  background: #0e0e0e;
+  animation: fadeinbac 20s;
+  animation-delay: 7s;
+  animation-fill-mode: forwards;
+}
+#p2 {
+  background: #0e0e0e;
+  animation: fadein 6s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+#p3 {
+  animation: fadein 6s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+#p4 {
+  animation: fadein 6s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+#p5 {
+  background: #0e0e0e;
+  animation: fadein 6s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+#p1::after {
+  content: "";
+  background: url("../images/vitahomepage.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #0e0e0e;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+#p2::after {
+  content: "";
+  background: url("../images/aboutme2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #0e0e0e;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+#p5::after {
+  content: "";
+  background: url("../images/contactphoto.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #0e0e0e;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+#p2 {
+  background: #0e0e0e;
+  overflow: scroll;
+}
+#p3 {
+  background: #0e0e0e;
+  overflow: scroll;
+}
+#p4 {
+  background: #0e0e0e;
+  overflow: scroll;
+}
+#p5 {
+  background: #0e0e0e;
+  overflow: scroll;
+}
+#t2:target #p2, 
+#t3:target #p3, 
+#t4:target #p4, 
+#t5:target #p5 {
+  display: flex;
+  opacity: 1;
+}
+#t2:target #p2 .homelink {
+  display: none;
+}
+#t2:target #p1, 
+#t3:target #p1, 
+#t4:target #p1, 
+#t5:target #p1 {
+  display: none;
+}
+#SR:target #RR {
+  opacity: 1;
+  pointer-events: auto;
+  background: black;
+  transition: opacity 2s ease;
+}
+#RR {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 6;
+  width: 100%;
+  height: 100%;
+  z-index: 14;
+  opacity: 0;
+  transition: opacity 3s;
+}
+#five {
+  height: 500vh;
+}
+#projectvidopen {
+  width: 90%;
+  z-index: 0;
+  height: 90%;
+  margin: 5%;
+}
+
+/* LARGE SCREEN////////////////////////////////////LARGE SCREEN*/
+
+@media screen and (min-width: 70em) {
+
+.landnav__toggle--hidden {
+  display:none;
+}
+
+li a {
+  opacity: 0.8;
+  filter: blur(0.5px);
+}
+ul:hover li:not(:hover) a {
+  filter: blur(0.8px);
+}
+
+
+/*/END LARGE SCREEEN*/
+}
+
+
+/* //////////////////////////////////////////MEDIUM SCREEEEEN */
+
+@media screen and (max-width: 60em){
+.landnav {
+display:none;
+}
+.projects__title {
+  font-size: 2em;
+  white-space: wrap;
+  margin:0 0 0 10%;
+}
+.landnav__toggle--hidden {
+  display:block;
+}
+
+li a {
+  opacity: 0.8;
+  filter: blur(0.5px);
+}
+ul:hover li:not(:hover) a {
+  filter: blur(0.8px);
+}
+
+.aboutbox__text {
+  width:70%;
+}
+.projects__film {
+  height:100vh;
+}
+.aboutbox {
+  width:60%;
+}
+p{
+  font-size: 0.8em;
+}
+
+/*/END MEDIUM SCREEEN*/
+}
+
+/* ////////////////////////////////////////////////SMALL SCREEEN*/
+
+@media screen and (max-width: 40em) {
+
+
+.logo {
+  left: 50%;
+  top:0;
+}
+.logo__header {
+  display:block;
+  width:100%;
+  height:15%;
+  background-color:#0e0e0e;
+  position:absolute;
+  z-index:13;
+}
+
+
+.landnav__toggle--hidden {
+  display:block;
+  top:5%;
+  z-index:14;
+}
+
+.projects {
+  margin-top:25%;
+  height:350vh;
+}
+
+.projects__title {
+  margin:0;
+  width:80%;
+  position:relative;
+  top:0;
+  left:0;
+  white-space: normal;
+  align-self: center;
+  text-align:left;
+  padding:2%;
+}
+.projects__text {
+  position:relative;
+  width: 80%;
+  order:3;
+  margin:0;
+  align-self:center;
+  background-color:#0e0e0e;
+}
+
+.projects__film {
+  height: auto;
+  margin-bottom:20%;
+}
+.projects__slider,
+.csslider1 {
+  position:relative;
+}
+
+.projects__vid {
+  position:relative;
+  top:0;
+}
+
+.contactbox {
+  margin-top:25%;
+  width:80%;
+}
+h3 {
+  font-size:1.5em;
+}
+h4 {
+  width:80%;
+  font-size:0.85em;
+  white-space: normal;
+}
+p{
+  font-size:0.8em;
+}
+.aboutbox {
+  width:100%;
+  margin-top:25%;
+}
+.aboutbox__text {
+  width:80%;
+}
+
+.fieldset {
+  width:80%;
+}
+#five {
+  height:350vh;
+}
+
+/*/END SMALL SCREEEN*/
+}

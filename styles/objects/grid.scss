@@ -1,0 +1,99 @@
+/* FLEX BOX CSS*/
+
+.col {
+  flex-direction: column;
+}
+.row {
+  flex-direction: row;
+}
+.flex_start_start {
+  display: flex;
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+.flex_start_end {
+  display: flex;
+  align-content: flex-start;
+  justify-content: flex-end;
+}
+.flex_start_end_i {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.flex_start_cen {
+  display: flex;
+  align-content: flex-start;
+  justify-content: center;
+}
+.flex_start_start_i {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.flex_cen_start_i {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.flex_start_cen_i {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.flex_cen_cen_i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex_cen_around_i {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.flex_end_end {
+  display: flex;
+  align-content: flex-end;
+  justify-content: flex-end;
+}
+.flex_end_start {
+  display: flex;
+  align-content: flex-end;
+  justify-content: flex-start;
+}
+.flex_end_cen {
+  display: flex;
+  align-content: flex-end;
+  justify-content: center;
+}
+.flex_end_cen_i {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.flex_cen_cen {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.flex_cen_start {
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+}
+.flex_cen_end {
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+}
+.flex_cen_end_i {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.nowrap {
+  flex-wrap: nowrap;
+}

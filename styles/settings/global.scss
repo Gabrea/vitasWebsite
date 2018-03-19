@@ -1,0 +1,87 @@
+
+
+/*Fonts*/
+$font-family-primary:'montserrat', sans-serif;
+$font-url-google:"";
+$font-weight-regular:400;
+$font-weight-bold:700;
+
+$font-size-s:0.9em;
+$font-size-base:1em;
+$font-size-m:1.2em;
+$font-size-l:1.3em;
+$font-size-xl:2em;
+
+//colors
+
+$White: #fff;
+$Black: #000;
+$Cerulean:#0db2e7;
+$Zodiac:#13274d;
+$Casablanca:#f89828;
+$Nevada: #6d6e70;
+$Mantis:#77dd77;
+$Flamingo:#f45e3f;
+$Iron:#e6e7e8;
+
+$Apricot:#f68f7c;
+
+$Bayoux:#4e5f78;
+
+//functional colors
+$color-primary:rgba($Cerulean ,1);
+$color-secondary:rgba($Zodiac,1);
+$color-accent: rgba($Casablanca,1);
+$color-tertiary:rgba($Nevada,1);
+$color-shadow:rgba($Iron,1);
+
+$color-text-base:rgba($Nevada,1);
+
+$color-success:rgba($Mantis,1);
+$color-error:rgba($Mantis,1);
+
+
+$background-brand-blue:linear-gradient(to bottom right, #14b1e7, #1acfff);
+
+$background-item-complete:linear-gradient(to bottom right, #83c674, #aad7a0);
+
+/*Button Backgrounds*/
+$background-button-default:linear-gradient(to left, #0db2e7, #0db2e7 50%, white 50%, white);
+$background-button-category-two:linear-gradient(to left, #f68f7c, #f68f7c 50%, white 50%, white);;
+
+
+/*Margins*/
+$margin-xsmall: 2px;
+$margin-small: 4px;
+$margin-medium: 8px;
+
+$margin-normal: 16px;
+
+$margin-large: 32px;
+$margin-xlarge: 64px;
+
+/*Padding*/
+$padding-button:8px;
+
+/*Transitions*/
+$transition-slow: all 1s ease;
+$transition-normal: all 0.5s ease;
+$transition-fast: all all 0.2s ease;
+
+//Breakpoints
+$break-xs: 20em;
+$break-s:40em;
+$break-m:58em;
+$break-l:67em;
+
+///maps
+$breakpoints: (
+  'xs':20em,
+  's':40em,
+  'm':58em,
+  'l':67em,
+);
+
+@if variable-exists(font-url-google) {
+  @import url($font-url-google);
+}
